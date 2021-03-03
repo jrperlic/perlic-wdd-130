@@ -1,6 +1,4 @@
-# perlic-wdd-130
-This is my final project site for WDD 130.
+# WDD Final Project
+Owner: Jared Perlic
 
-This is a test.
-
-This is another test.
+Semester: Winter 2021
