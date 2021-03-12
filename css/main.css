@@ -94,53 +94,13 @@ header nav ul li {
 main {
     flex: 1;
     font-size: var(--font-size);
+    font-family: var(--main-font);
     padding-top: var(--spacing);
     padding-bottom: var(--spacing);
     padding-left: 250px;
     padding-right: 250px;
     color: var(--font-color);
     background-color: var(--background-color);
-}
-
-h1 {
-    font-family: var(--alt-font);
-    margin-bottom: 7.5px;
-}
-
-h2.author {
-    margin-bottom: 0;
-    font-family: var(--alt-font);
-    font-size: 0.85rem;
-    font-weight: bold;
-    color: var(--alt-font-color);
-}
-
-h3.date {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-family: var(--alt-font);
-    font-size: 0.85rem;
-    font-style: italic;
-    color: var(--alt-font-color);
-}
-
-p {
-    font-family: var(--main-font);
-}
-
-.board {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    max-width: 400px;
-    max-height: auto;
-}
-
-.analysis {
-    text-align: center;
-    font-size: 0.75rem;
-    font-style: italic;
 }
 
 footer {
@@ -318,4 +278,15 @@ body.dark-mode footer #dark-mode #tgl-wrapper .tgl + .tgl-btn {
 
 body.dark-mode footer #dark-mode #tgl-wrapper .tgl + .tgl-btn:after {
     background-color: var(--dark-border-color);
+}
+
+/*=====================*\
+  RESPONSIVE WEB DESIGN 
+\*=====================*/
+
+@media (max-width: 768px) {
+    main {
+        padding-left: var(--spacing);
+        padding-right: var(--spacing);
+    }
 }

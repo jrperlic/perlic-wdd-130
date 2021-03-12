@@ -8,6 +8,80 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <style>
+        h1 {
+            font-family: var(--alt-font);
+            margin-bottom: 7.5px;
+        }
+
+        h2.author {
+            margin-bottom: 0;
+            font-family: var(--alt-font);
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        h3.date {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: var(--alt-font);
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        #tournament1 {
+            grid-row: 1;
+            grid-column: 1;
+            margin: 7.5px;
+            width: 400px;
+            height: 280px;
+        }
+
+        #tournament2 {
+            grid-row: 1;
+            grid-column: 2;
+            margin: 7.5px;
+            width: 400px;
+            height: 280px;
+        }
+
+        .board {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 400px;
+            max-height: auto;
+        }
+
+        .analysis {
+            text-align: center;
+            font-size: 0.75rem;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            #tournament1 {
+                width: 200px;
+                height: 140px;
+            }
+
+            #tournament2 {
+                width: 200px;
+                height: 140px;
+            }
+            
+            .board {
+                max-width: 300px;
+                max-height: 300px;
+            }
+        }
+    </style>
     <script src="js/dark-mode.js"></script>
 </head>
 <body>
@@ -56,10 +130,20 @@
             March 20, 2021
         </h3>
         <p>
-            Home Page
+            The Mile High Team Qualifiers event is coming the weekend of April 3-4! Make sure to sign up now if you want to participate. The top Mile High teams will be looking for strong talent.
         </p>
+        <p>
+            The event will be a 5-round point-based exhibition held in Colorado Springs, CO at the Wilkinson Center. Over 140 players participated in last year's qualifiers.
+        </p>
+        <p>
+            The 2020 qualifiers were held online due to COVID-19. But here are some pictures from the 2019 in-person event:
+        </p>
+        <div class="image-grid">
+            <img src="assets/home/tournament1.jpg" id="tournament1">
+            <img src="assets/home/tournament2.jpg" id="tournament2">
+        </div>
         <h1>
-            30th Annual Mile High Open - Tournament Results
+            30th Annual Mile High Open - Results
         </h1>
         <h2 class="author">
             Ryan Masten
@@ -68,9 +152,24 @@
             February 9, 2021
         </h3>
         <p>
-            Home Page
+            The 30th annual Mile High Open took place February 6-7 in Denver, Colorado. We are pleased to report that a total of 83 players participated between three divisions.
+        </p>
+        <p>
+            Because of COVID restrictions, many things were different. We wiped down the chess pieces and boards to aid those most at risk. We used DGT boards and broadcasted the games via computer.
+        </p>
+        <p>
+            Despite the restrictions, we had a very good showing. A number of strong players attended, including: IM Bren Scherrer, NM Curtis Peterson, and WFM Maria Kostenka.
+        </p>
+        <p>
+            Logan Merritt, a Class A player from Wyoming, won the $50 prize for the Best Game of the event. After 33 moves, this was the position with Logan's opponent to play:
         </p>
         <img src="assets/home/chess1.jpg" class="board" alt="chess1.jpg">
+        <p class="analysis">
+            Logan's opponent played 34.Rc6. Can you see Logan's response?
+        </p>
+        <p>
+            Thank you to all who participated!
+        </p>
         <h1>
             Kelsch Wins 2020 Pacific City Open
         </h1>
