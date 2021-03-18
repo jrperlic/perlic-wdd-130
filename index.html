@@ -31,7 +31,7 @@
 
         .image-grid {
             display: grid;
-            grid-template-rows: auto;
+            grid-template-rows: auto auto;
             grid-template-columns: 1fr 1fr;
         }
 
@@ -39,16 +39,34 @@
             grid-row: 1;
             grid-column: 1;
             margin: 7.5px;
-            width: 400px;
-            height: 280px;
+            max-width: 400px;
+            max-height: 280px;
+            justify-items: center;
         }
 
         #tournament2 {
             grid-row: 1;
             grid-column: 2;
             margin: 7.5px;
-            width: 400px;
-            height: 280px;
+            max-width: 400px;
+            max-height: 280px;
+            justify-items: center;
+        }
+
+        figcaption {
+            font-size: 0.75rem;
+        }
+
+        #caption1 {
+            grid-row: 2;
+            grid-column: 1;
+            text-align: center;
+        }
+
+        #caption2 {
+            grid-row: 2;
+            grid-column: 2;
+            text-align: center;
         }
 
         .board {
@@ -66,14 +84,33 @@
         }
 
         @media (max-width: 768px) {
+            .image-grid {
+                grid-template-columns: auto;
+                grid-template-rows: auto auto auto auto;
+            }
+
             #tournament1 {
-                width: 200px;
-                height: 140px;
+                grid-row: 1;
+                grid-column: 1;
+                max-width: 200px;
+                max-height: 140px;
+            }
+
+            #caption1 {
+                grid-row: 2;
+                grid-column: 1;
             }
 
             #tournament2 {
-                width: 200px;
-                height: 140px;
+                grid-row: 3;
+                grid-column: 1;
+                max-width: 200px;
+                max-height: 140px;
+            }
+
+            #caption2 {
+                grid-row: 4;
+                grid-column: 1;
             }
             
             .board {
@@ -141,11 +178,11 @@
         <div class="image-grid">
             <figure>
                 <img src="assets/home/tournament1.jpg" id="tournament1">
-                <figcaption>2019 Mile High Qualifiers - Open</figcaption>
+                <figcaption id="caption1">2019 Mile High Qualifiers - Open</figcaption>
             </figure>
             <figure>
                 <img src="assets/home/tournament2.jpg" id="tournament2">
-                <figcaption>Scholastic Division</figcaption>
+                <figcaption id="caption2">Scholastic Division</figcaption>
             </figure>
         </div>
         <h1>
@@ -196,7 +233,7 @@
         </p>
         <img src="assets/home/chess2.jpg" class="board" alt="chess2.jpg">
         <p class="analysis">
-            After 21...Ng4, Kelsch played 22.Qxf7+! and Wilding resigned.
+            After 21...Ng4??, Kelsch played 22.Qxf7+! and Wilding resigned.
         </p>
         <p>
             Congratulations to Mr. Kelsch on his victory! MHA players Aditya Naranaya and Joshua Bader finished in 5th and 9th place, respectively.
