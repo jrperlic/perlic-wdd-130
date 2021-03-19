@@ -30,43 +30,39 @@
         }
 
         .image-grid {
-            display: grid;
-            grid-template-rows: auto auto;
-            grid-template-columns: 1fr 1fr;
-        }
-
-        #tournament1 {
-            grid-row: 1;
-            grid-column: 1;
-            margin: 7.5px;
-            max-width: 400px;
-            max-height: 280px;
-            justify-items: center;
-        }
-
-        #tournament2 {
-            grid-row: 1;
-            grid-column: 2;
-            margin: 7.5px;
-            max-width: 400px;
-            max-height: 280px;
-            justify-items: center;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto;
+            text-align: center;
         }
 
         figcaption {
             font-size: 0.75rem;
+            text-align: center;
+            vertical-align: middle;
         }
 
-        #caption1 {
-            grid-row: 2;
+        #figure1 {
+            grid-row: 1;
             grid-column: 1;
-            text-align: center;
         }
 
-        #caption2 {
-            grid-row: 2;
+        #figure2 {
+            grid-row: 1;
             grid-column: 2;
-            text-align: center;
+        }
+
+        #tournament1 {
+            margin: 7.5px;
+            width: 400px;
+            height: 280px;
+            justify-items: center;
+        }
+
+        #tournament2 {
+            margin: 7.5px;
+            width: 400px;
+            height: 280px;
+            justify-items: center;
         }
 
         .board {
@@ -86,33 +82,29 @@
         @media (max-width: 768px) {
             .image-grid {
                 grid-template-columns: auto;
-                grid-template-rows: auto auto auto auto;
+                grid-template-rows: auto auto;
             }
 
-            #tournament1 {
+            #figure1 {
                 grid-row: 1;
                 grid-column: 1;
-                max-width: 200px;
-                max-height: 140px;
             }
 
-            #caption1 {
+            #figure2 {
                 grid-row: 2;
                 grid-column: 1;
             }
 
-            #tournament2 {
-                grid-row: 3;
-                grid-column: 1;
-                max-width: 200px;
-                max-height: 140px;
+            #tournament1 {
+                width: 200px;
+                height: 140px;
             }
 
-            #caption2 {
-                grid-row: 4;
-                grid-column: 1;
+            #tournament2 {
+                width: 200px;
+                height: 140px;
             }
-            
+
             .board {
                 max-width: 300px;
                 max-height: 300px;
@@ -157,87 +149,93 @@
         </nav>
     </header>
     <main>
-        <h1>
-            Mile High Team Qualifiers
-        </h1>
-        <h2 class="author">
-            Joe Miller
-        </h2>
-        <h3 class="date">
-            March 20, 2021
-        </h3>
-        <p>
-            The Mile High Team Qualifiers event is coming the weekend of April 3-4! Make sure to sign up now if you want to participate. The top Mile High teams will be looking for strong talent.
-        </p>
-        <p>
-            The event will be a 5-round point-based exhibition held in Colorado Springs, CO at the Wilkinson Center. Over 140 players participated in last year's qualifiers.
-        </p>
-        <p>
-            The 2020 qualifiers were held online due to COVID-19. But here are some pictures from the 2019 in-person event:
-        </p>
-        <div class="image-grid">
-            <figure>
-                <img src="assets/home/tournament1.jpg" id="tournament1">
-                <figcaption id="caption1">2019 Mile High Qualifiers - Open</figcaption>
-            </figure>
-            <figure>
-                <img src="assets/home/tournament2.jpg" id="tournament2">
-                <figcaption id="caption2">Scholastic Division</figcaption>
-            </figure>
-        </div>
-        <h1>
-            30th Annual Mile High Open - Results
-        </h1>
-        <h2 class="author">
-            Ryan Masten
-        </h2>
-        <h3 class="date">
-            February 9, 2021
-        </h3>
-        <p>
-            The 30th annual Mile High Open took place February 6-7 in Denver, Colorado. We are pleased to report that a total of 83 players participated between three divisions.
-        </p>
-        <p>
-            Because of COVID restrictions, many things were different. We wiped down the chess pieces and boards to aid those most at risk. We used DGT boards and broadcasted the games via computer.
-        </p>
-        <p>
-            Despite the restrictions, we had a very good showing. A number of strong players attended, including: IM Bren Scherrer, NM Curtis Peterson, and WFM Maria Kostenka.
-        </p>
-        <p>
-            Logan Merritt, a Class A player from Wyoming, won the $50 prize for the Best Game of the event. After 33 moves, this was the position with Logan's opponent to play:
-        </p>
-        <img src="assets/home/chess1.jpg" class="board" alt="chess1.jpg">
-        <p class="analysis">
-            Logan's opponent played 34.Rc6. Can you see Logan's response?
-        </p>
-        <p>
-            Thank you to all who participated!
-        </p>
-        <h1>
-            Kelsch Wins 2020 Pacific City Open
-        </h1>
-        <h2 class="author">
-            Joe Miller
-        </h2>
-        <h3 class="date">
-            December 15, 2020
-        </h3>
-        <p>
-            NM Mark Kelsch won the 2020 Pacific City Open on Sunday. The master from California defeated USCF Expert Paul Wilding in the final round after taking an early lead.
-        </p>
-        <p>
-            The two-day event began December 12. On the first day, Kelsch faced strong competition, including Emily Arvizo, Richard Vierhus, and NM Connor Lang. Against the three, he racked up two wins and a draw for a score of 2.5/3.
-        </p>
-        <p>
-            On Day 2, Kelsch fell behind after drawing two more times. In the final round, he pulled off an impressive win with the English in only 22 moves. Here's the critical position from the final game:
-        </p>
-        <img src="assets/home/chess2.jpg" class="board" alt="chess2.jpg">
-        <p class="analysis">
-            After 21...Ng4??, Kelsch played 22.Qxf7+! and Wilding resigned.
-        </p>
-        <p>
-            Congratulations to Mr. Kelsch on his victory! MHA players Aditya Naranaya and Joshua Bader finished in 5th and 9th place, respectively.
-        </p>
+        <section>
+            <h1>
+                Mile High Team Qualifiers
+            </h1>
+            <h2 class="author">
+                Joe Miller
+            </h2>
+            <h3 class="date">
+                March 20, 2021
+            </h3>
+            <p>
+                The Mile High Team Qualifiers event is coming the weekend of April 3-4! Make sure to sign up now if you want to participate. The top Mile High teams will be looking for strong talent.
+            </p>
+            <p>
+                The event will be a 5-round point-based exhibition held in Colorado Springs, CO at the Wilkinson Center. Over 140 players participated in last year's qualifiers.
+            </p>
+            <p>
+                The 2020 qualifiers were held online due to COVID-19. But here are some pictures from the 2019 in-person event:
+            </p>
+            <div class="image-grid">
+                <figure id="figure1">
+                    <img src="assets/home/tournament1.jpg" id="tournament1">
+                    <figcaption>2019 Mile High Qualifiers - Open</figcaption>
+                </figure>
+                <figure  id="figure2">
+                    <img src="assets/home/tournament2.jpg" id="tournament2">
+                    <figcaption>Scholastic Division</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section>
+            <h1>
+                30th Annual Mile High Open - Results
+            </h1>
+            <h2 class="author">
+                Ryan Masten
+            </h2>
+            <h3 class="date">
+                February 9, 2021
+            </h3>
+            <p>
+                The 30th annual Mile High Open took place February 6-7 in Denver, Colorado. We are pleased to report that a total of 83 players participated between three divisions.
+            </p>
+            <p>
+                Because of COVID restrictions, many things were different. We wiped down the chess pieces and boards to aid those most at risk. We used DGT boards and broadcasted the games via computer.
+            </p>
+            <p>
+                Despite the restrictions, we had a very good showing. A number of strong players attended, including: IM Bren Scherrer, NM Curtis Peterson, and WFM Maria Kostenka.
+            </p>
+            <p>
+                Logan Merritt, a Class A player from Wyoming, won the $50 prize for the Best Game of the event. After 33 moves, this was the position with Logan's opponent to play:
+            </p>
+            <img src="assets/home/chess1.jpg" class="board" alt="chess1.jpg">
+            <p class="analysis">
+                Logan's opponent played 34.Rc6. Can you see Logan's response?
+            </p>
+            <p>
+                Thank you to all who participated!
+            </p>
+        </section>
+        <section>
+            <h1>
+                Kelsch Wins 2020 Pacific City Open
+            </h1>
+            <h2 class="author">
+                Joe Miller
+            </h2>
+            <h3 class="date">
+                December 15, 2020
+            </h3>
+            <p>
+                NM Mark Kelsch won the 2020 Pacific City Open on Sunday. The master from California defeated USCF Expert Paul Wilding in the final round after taking an early lead.
+            </p>
+            <p>
+                The two-day event began December 12. On the first day, Kelsch faced strong competition, including Emily Arvizo, Richard Vierhus, and NM Connor Lang. Against the three, he racked up two wins and a draw for a score of 2.5/3.
+            </p>
+            <p>
+                On Day 2, Kelsch fell behind after drawing two more times. In the final round, he pulled off an impressive win with the English in only 22 moves. Here's the critical position from the final game:
+            </p>
+            <img src="assets/home/chess2.jpg" class="board" alt="chess2.jpg">
+            <p class="analysis">
+                After 21...Ng4??, Kelsch played 22.Qxf7+! and Wilding resigned.
+            </p>
+            <p>
+                Congratulations to Mr. Kelsch on his victory! MHA players Aditya Naranaya and Joshua Bader finished in 5th and 9th place, respectively.
+            </p>
+        </section>
     </main>
     <footer>
         <div id="legal">
