@@ -9,6 +9,52 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <style>
+        h1 {
+            font-family: var(--alt-font);
+        }
+
+        section {
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: auto auto;
+            padding: 15px;
+        }
+
+        .card {
+            grid-row: 1;
+            grid-column: 1;
+            border: 1px solid var(--border-color);
+            background-color: var(--alt-background-color);
+        }
+
+        .alt-card {
+            grid-row: 1;
+            grid-column: 2;
+            border: 1px solid var(--border-color);
+            background-color: var(--alt-background-color);
+        }
+
+        body.dark-mode .card {
+            border: 1px solid var(--dark-border-color);
+            background-color: var(--dark-alt-background-color);
+        }
+
+        body.dark-mode .alt-card {
+            border: 1px solid var(--dark-border-color);
+            background-color: var(--dark-alt-background-color);
+        }
+
+        .description {
+            grid-row: 1;
+            grid-column: 2;
+            margin: 7.5px;
+        }
+
+        .alt-description {
+            grid-row: 1;
+            grid-column: 1;
+            margin: 7.5px;
+        }
     </style>
     <script src="js/dark-mode.js"></script>
     <script src="js/fake-send.js"></script>
@@ -49,7 +95,50 @@
         </nav>
     </header>
     <main>
-        Insert text here.
+        <h1>About Us</h1>
+        <p>
+            The Mile High Mates began as a chess team in 1991. Formed by chess enthusiasts Bruce Hayes, Michael Hennigar, and Brad Doherty, the team met in a garage for the first three years of its existence. Often, there were not enough players to fill all the boards and team members played on two boards at once. In 1999, MHM expanded into two teams. By 2016, MHM had five teams.
+        </p>
+        <p>
+            The Mile High Mates chess team promotes the study and knowledge of the game of chess, for its own sake as an art, a science, and a source of self improvement, as well as a means for the improvement of society. Chess informs, educates, and fosters the development of players, both professional and amateur, youth and adult. It encourages the development of upstanding personal character, mental and emotional stability, increased personal self-esteem and self-confidence, and mutual respect. The play of chess serves as a means for people to come together in a democratic spirit from diverse social backgrounds. In this role as part of the social fabric of the Rocky Mountain region, MHM unites people of different ages, different ethnicities, opposite genders, different economic and cultural associations, and it promotes chess in American schools.
+        </p>
+        <h1>Management</h1>
+        <section>
+            <div class="card">
+                <img src="assets/about/doherty.jpg" alt="Brad Doherty">
+                <div class="container">
+                  <h4><b>Brad Doherty, President</b></h4>
+                  <p><i>USCF: 1950</i></p>
+                </div>
+              </div>
+            <div class="description">
+                <p>Insert text here.</p>
+            </div>
+        </section>
+        <section>
+            <div class="alt-description">
+                <p>Insert text here.</p>
+            </div>
+            <div class="alt-card">
+                <img src="assets/about/hayes.jpg" alt="Bruce Hayes">
+                <div class="container">
+                  <h4><b>Bruce Hayes, Secretary</b></h4>
+                  <p><i>USCF: 2015</i></p>
+                </div>
+              </div>
+        </section>
+        <section>
+            <div class="card">
+                <img src="assets/about/radic.jpg" alt="Anthony Radic">
+                <div class="container">
+                  <h4><b>Anthony Radic, Treasurer</b></h4>
+                  <p><i>USCF: 1770</i></p>
+                </div>
+              </div>
+            <div class="description">
+                <p>Insert text here.</p>
+            </div>
+        </section>
     </main>
     <footer>
         <div id="legal">
