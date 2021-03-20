@@ -17,21 +17,42 @@
             display: grid;
             grid-template-rows: auto;
             grid-template-columns: auto auto;
-            padding: 15px;
+            padding-left: 200px;
+            padding-right: 200px;
+            padding-bottom: 50px;
         }
 
         .card {
+            max-width: 250px;
+            padding: 7.5px;
             grid-row: 1;
             grid-column: 1;
             border: 1px solid var(--border-color);
             background-color: var(--alt-background-color);
+            text-align: center;
+        }
+
+        .card img {
+            margin-bottom: -15px;
+        }
+
+        .container {
+            margin: 7.5px 7.5px -15px 7.5px;
+            vertical-align: middle;
         }
 
         .alt-card {
+            max-width: 250px;
+            padding: 7.5px;
             grid-row: 1;
             grid-column: 2;
             border: 1px solid var(--border-color);
             background-color: var(--alt-background-color);
+            text-align: center;
+        }
+
+        .alt-card img {
+            margin-bottom: -15px;
         }
 
         body.dark-mode .card {
@@ -48,12 +69,21 @@
             grid-row: 1;
             grid-column: 2;
             margin: 7.5px;
+            padding-left: 15px;
         }
 
         .alt-description {
             grid-row: 1;
             grid-column: 1;
             margin: 7.5px;
+            padding-right: 15px;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
         }
     </style>
     <script src="js/dark-mode.js"></script>
@@ -97,7 +127,7 @@
     <main>
         <h1>About Us</h1>
         <p>
-            The Mile High Mates began as a chess team in 1991. Formed by chess enthusiasts Bruce Hayes, Michael Hennigar, and Brad Doherty, the team met in a garage for the first three years of its existence. Often, there were not enough players to fill all the boards and team members played on two boards at once. In 1999, MHM expanded into two teams. By 2016, MHM had five teams.
+            Mile High Mates began as a chess team in 1991. Formed by chess enthusiasts Bruce Hayes, Michael Hennigar, and Brad Doherty, the team met in a garage for the first three years of its existence. Often, there were not enough players to fill all the boards and team members played on two boards at once. In 1999, MHM expanded into two teams. By 2016, MHM had five teams.
         </p>
         <p>
             The Mile High Mates chess team promotes the study and knowledge of the game of chess, for its own sake as an art, a science, and a source of self improvement, as well as a means for the improvement of society. Chess informs, educates, and fosters the development of players, both professional and amateur, youth and adult. It encourages the development of upstanding personal character, mental and emotional stability, increased personal self-esteem and self-confidence, and mutual respect. The play of chess serves as a means for people to come together in a democratic spirit from diverse social backgrounds. In this role as part of the social fabric of the Rocky Mountain region, MHM unites people of different ages, different ethnicities, opposite genders, different economic and cultural associations, and it promotes chess in American schools.
@@ -112,18 +142,20 @@
                 </div>
               </div>
             <div class="description">
-                <p>Insert text here.</p>
+                <p>Brad Doherty, a Colorado native, started playing chess at the age of 6. His grandfather taught him the rules and Brad played every day. He has played in local and state tournaments for almost forty years. In 1991, He started the Mile High Mates chess team along with fellow chess players Michael Hennigar and Bruce Hayes. He became President of MHM in 1992.</p>
+                <p>Email: bdoherty@chess.mhm.com</p>
             </div>
         </section>
         <section>
             <div class="alt-description">
-                <p>Insert text here.</p>
+                <p>Bruce Hayes did not start playing chess until the age of 11. He quickly became obsessed with chess and learned as many openings as he could. At age 13, only two years after learning how to play, he won his middle school's chess tournament. Since then, Bruce has enthusiastically continued to play the game. He became the Secretary of MHM in 1993.</p>
+                <p>Email: bhayes@chess.mhm.com</p>
             </div>
             <div class="alt-card">
                 <img src="assets/about/hayes.jpg" alt="Bruce Hayes">
                 <div class="container">
                   <h4><b>Bruce Hayes, Secretary</b></h4>
-                  <p><i>USCF: 2015</i></p>
+                  <p><i>USCF: 2015<br />FIDE: 1900</i></p>
                 </div>
               </div>
         </section>
@@ -136,7 +168,8 @@
                 </div>
               </div>
             <div class="description">
-                <p>Insert text here.</p>
+                <p>Anthony Radic moved to the Rocky Mountain area in 2002. Soon, he began to play chess in local tournaments where he developed a reputation as a friendly but difficult opponent over the board. Radic particularly enjoys playing chess variants such as King of the Hill and Bughouse. He became the Treasurer for MHM after Michael Hennigar resigned in 2004.</p>
+                <p>Email: aradic@chess.mhm.com</p>
             </div>
         </section>
     </main>
