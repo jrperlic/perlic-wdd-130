@@ -3,71 +3,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Coaching</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <style>
-        h1 {
-            font-family: var(--alt-font);
-        }
 
-        form {
-            display: grid;
-            grid-template-rows: auto auto auto auto;
-            grid-template-columns: auto;
-            margin-left: 50px;
-            margin-right: 50px;
-            padding: 15px;
-            border: 1px solid var(--border-color);
-            background-color: var(--alt-background-color);
-            font-family: var(--alt-font);
-        }
-
-        body.dark-mode form {
-            border: 1px solid var(--dark-border-color);
-            background-color: var(--dark-alt-background-color);
-        }
-
-        input {
-            width: 100%;
-            margin-top: 2.5px;
-        }
-
-        #name {
-            grid-row: 1;
-            grid-column: 1;
-            padding-bottom: 7.5px;
-        }
-
-        #subject {
-            grid-row: 2;
-            grid-column: 1;
-            padding-bottom: 7.5px;
-        }
-
-        #message {
-            grid-row: 3;
-            grid-column: 1;
-            padding-bottom: 7.5px;
-        }
-
-        #contact-form-submit {
-            grid-row: 4;
-            grid-column: 1;
-            justify-self: right;
-            width: 200px;
-        }
-
-        form textarea {
-            resize: none;
-            width: 100%;
-            margin-top: 2.5px;
-        }
     </style>
     <script src="js/dark-mode.js"></script>
-    <script src="js/fake-send.js"></script>
 </head>
 <body>
     <header>
@@ -105,26 +49,7 @@
         </nav>
     </header>
     <main>
-        <h1>Contact Us</h1>
-        <p>
-            Email us with any questions or inquiries or call 970-657-6957. We would be happy to answer your questions and set up a meeting with you. Mile High Mates can help you achieve your chess goals!
-        </p>
-        <form method="GET" action="contact-us.html" id="contact-form">
-            <label id="name">
-                Name:<br />
-                <input type="text" name="name" placeholder="Name">
-            </label>
-            <label id="subject">
-                Subject:<br />
-                <input type="text" name="subject" placeholder="Subject">
-            </label>
-            <label id="message">
-                Message:<br />
-                <textarea name="message" placeholder="Insert text here."></textarea>
-            </label>
-            <input type="submit" value="Send Message" id="contact-form-submit">
-            <div id="contact-form-message"></div>
-        </form>
+
     </main>
     <footer>
         <div id="legal">
