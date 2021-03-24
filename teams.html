@@ -9,8 +9,13 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <style>
-        h1, h4 {
+        h1, h3, h4 {
             font-family: var(--alt-font);
+        }
+
+        #div-text {
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 45px;
         }
 
         section {
@@ -25,6 +30,19 @@
 
         table, th, td {
             border: 1px solid var(--border-color);
+        }
+
+        th[rowspan] {
+            vertical-align: top;
+            text-align: left;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 15px;
+        }
+
+        body.dark-mode #div-text {
+            border-bottom: 1px solid var(--dark-border-color);
         }
 
         body.dark-mode table, body.dark-mode th, body.darkmode td {
@@ -69,40 +87,53 @@
         </nav>
     </header>
     <main>
-        <h1>Teams</h1>
+        <div id="div-text">
+            <h1>Teams</h1>
+        <p>Mile High Mates currently sponsors six teams.</p>
+        <h3>Joining a Team</h3>
+        <p>Insert text here.</p>
+        <h3>Making Your Own Team</h3>
+        <p>Insert text here.</p>
+        </div>
         <section>
             <h4>Mile High Masters [MHM]</h4>
             <table>
                 <tr>
                     <th width="20%">Anderson, Scott</th>
                     <th width="10%">2398</th>
-                    <th width="20%">Location</th>
-                    <th rowspan="6">For players with a USCF rating over 2200.</th>
+                    <th width="20%">Colorado</th>
+                    <th rowspan="6">For players with a USCF rating over 2200.<br />
+                        Established: 1991
+                        <ul>
+                            <li>9-time winner of St. Louis Open - Teams</li>
+                            <li>2010 US Chess Olympiad - Silver (2nd)</li>
+                            <li>2014 US Chess Olympiad - Bronze (3rd)</li>
+                        </ul></th>
                 </tr>
                 <tr>
                     <th>Cash, Raymond</th>
                     <th>2365</th>
-                    <th>Location</th>
+                    <th>Utah</th>
                 </tr>
                 <tr>
                     <th>Xiong, Allan</th>
                     <th>2352</th>
-                    <th>Location</th>
+                    <th>Colorado</th>
                 </tr>
                 <tr>
                     <th>Kelsch, Mark</th>
                     <th>2271</th>
-                    <th>Location</th>
+                    <th>Colorado</th>
                 </tr>
                 <tr>
                     <th>Carpenter, Brendan</th>
                     <th>2229</th>
-                    <th>Location</th>
+                    <th>New Mexico</th>
                 </tr>
                 <tr>
                     <th>Avila, Isaak</th>
                     <th>2204</th>
-                    <th>Location</th>
+                    <th>Colorado</th>
                 </tr>
             </table>
         </section>
@@ -110,35 +141,40 @@
             <h4>Mile High A-Team [MHA]</h4>
             <table>
                 <tr>
-                    <th rowspan="6">For USCF experts.</th>
+                    <th rowspan="6">For USCF experts.<br />
+                        Established: 1999
+                        <ul>
+                            <li>3-time runner-up of St. Louis Open - Teams</li>
+                            <li>2019 US Chess Olympiad - 16th</li>
+                        </ul></th>
                     <th width="20%">Niver, Austin</th>
                     <th width="10%">2175</th>
-                    <th width="20%">Location</th>
+                    <th width="20%">Colorado</th>
                 </tr>
                 <tr>
                     <th>Wilenski, Alex</th>
                     <th>2116</th>
-                    <th>Location</th>
+                    <th>Oregon</th>
                 </tr>
                 <tr>
                     <th>Naranaya, Aditya</th>
                     <th>2034</th>
-                    <th>Location</th>
+                    <th>California</th>
                 </tr>
                 <tr>
                     <th>Lowry, Matthew</th>
                     <th>2010</th>
-                    <th>Location</th>
+                    <th>Colorado</th>
                 </tr>
                 <tr>
                     <th>Bader, Joshua</th>
                     <th>1987</th>
-                    <th>Location</th>
+                    <th>Colorado</th>
                 </tr>
                 <tr>
                     <th>Barrera, Marshall</th>
                     <th>1985</th>
-                    <th>Location</th>
+                    <th>Arizona</th>
                 </tr>
             </table>
         </section>
@@ -148,33 +184,38 @@
                 <tr>
                     <th width="20%">Hughes, Allison</th>
                     <th width="10%">2151</th>
-                    <th width="20%">Location</th>
-                    <th rowspan="6">Insert text here.</th>
+                    <th width="20%">Colorado</th>
+                    <th rowspan="6">For women players.<br />
+                        Established: 2014
+                        <ul>
+                            <li>U.S. Women's Open (Teams) - 2nd</li>
+                            <li>2010 US Chess Olympiad - Silver (2nd)</li>
+                        </ul></th>
                 </tr>
                 <tr>
                     <th>Chapman, Leila</th>
                     <th>2080</th>
-                    <th>Location</th>
+                    <th>Washington</th>
                 </tr>
                 <tr>
                     <th>Donnelly, Jessica</th>
                     <th>2001</th>
-                    <th>Location</th>
+                    <th>Nevada</th>
                 </tr>
                 <tr>
                     <th>McConnell, Rhonda</th>
                     <th>1989</th>
-                    <th>Location</th>
+                    <th>Colorado</th>
                 </tr>
                 <tr>
                     <th>Radhakrishnan, Tanvi</th>
                     <th>1885</th>
-                    <th>Location</th>
+                    <th>Colorado</th>
                 </tr>
                 <tr>
-                    <th>Knox, Milla</th>
+                    <th>Knox, Mary-Sue</th>
                     <th>1763</th>
-                    <th>Location</th>
+                    <th>Texas</th>
                 </tr>
             </table>
         </section>
@@ -182,35 +223,40 @@
             <h4>Mile High Seniors [MHS]</h4>
             <table>
                 <tr>
-                    <th rowspan="6">For players ages 55 and older.</th>
-                    <th width="20%">Name</th>
-                    <th width="10%">Rating</th>
-                    <th width="20%">Location</th>
+                    <th rowspan="6">For players ages 55 and older.<br />
+                        Established: 2016
+                        <ul>
+                            <li>4-time winner of Denver Open (Seniors) - Teams</li>
+                            <li>2017 US West Open (Teams) - 14th</li>
+                        </ul></th>
+                    <th width="20%">Pritchard, James</th>
+                    <th width="10%">2144</th>
+                    <th width="20%">Colorado</th>
                 </tr>
                 <tr>
-                    <th>Name</th>
-                    <th>Rating</th>
-                    <th>Location</th>
+                    <th>Eckert, Doug</th>
+                    <th>2088</th>
+                    <th>Colorado</th>
                 </tr>
                 <tr>
-                    <th>Name</th>
-                    <th>Rating</th>
-                    <th>Location</th>
+                    <th>Wrenn-Rooney, Scott</th>
+                    <th>1955</th>
+                    <th>North Dakota</th>
                 </tr>
                 <tr>
-                    <th>Name</th>
-                    <th>Rating</th>
-                    <th>Location</th>
+                    <th>Acevedo, Jose</th>
+                    <th>1952</th>
+                    <th>Colorado</th>
                 </tr>
                 <tr>
-                    <th>Name</th>
-                    <th>Rating</th>
-                    <th>Location</th>
+                    <th>Yandell, William</th>
+                    <th>1909</th>
+                    <th>Wyoming</th>
                 </tr>
                 <tr>
-                    <th>Name</th>
-                    <th>Rating</th>
-                    <th>Location</th>
+                    <th>Rosen, Elizabeth</th>
+                    <th>1803</th>
+                    <th>Colorado</th>
                 </tr>
             </table>
         </section>
@@ -218,35 +264,41 @@
             <h4>Mile High Juniors [MHJ]</h4>
             <table>
                 <tr>
-                    <th width="20%">Name</th>
-                    <th width="10%">Rating</th>
-                    <th width="20%">Location</th>
-                    <th rowspan="6">For players under the age of 20.</th>
+                    <th width="20%">Taylor, Ayden</th>
+                    <th width="10%">2004</th>
+                    <th width="20%">Colorado</th>
+                    <th rowspan="6">For players under the age of 20.<br />
+                        Established: 2013
+                        <ul>
+                            <li>2019 US Chess Olympiad (Junior) - 2nd</li>
+                            <li>2018 Chess Olympiad (Teams, Junior) - 12th</li>
+                        </ul></th>
+                </tr>
                 </tr>
                 <tr>
-                    <th>Name</th>
-                    <th>Rating</th>
-                    <th>Location</th>
+                    <th>Cannon, Wesley</th>
+                    <th>1990</th>
+                    <th>California</th>
                 </tr>
                 <tr>
-                    <th>Name</th>
-                    <th>Rating</th>
-                    <th>Location</th>
+                    <th>Schenk, Kyle</th>
+                    <th>1929</th>
+                    <th>Idaho</th>
                 </tr>
                 <tr>
-                    <th>Name</th>
-                    <th>Rating</th>
-                    <th>Location</th>
+                    <th>Gochanhour, Andrew</th>
+                    <th>1896</th>
+                    <th>Colorado</th>
                 </tr>
                 <tr>
-                    <th>Name</th>
-                    <th>Rating</th>
-                    <th>Location</th>
+                    <th>Warner, Chance</th>
+                    <th>1895</th>
+                    <th>Texas</th>
                 </tr>
                 <tr>
-                    <th>Name</th>
-                    <th>Rating</th>
-                    <th>Location</th>
+                    <th>Sojka, Mira</th>
+                    <th>1802</th>
+                    <th>California</th>
                 </tr>
             </table>
         </section>
@@ -254,35 +306,40 @@
             <h4>Mile High International [MHI]</h4>
             <table>
                 <tr>
-                    <th rowspan="6">For players living outside the United States.</th>
-                    <th width="20%">Name</th>
-                    <th width="10%">Rating</th>
-                    <th width="20%">Location</th>
+                    <th rowspan="6">For players living outside the United States.<br />
+                        Established: 2018 (Newest)
+                        <ul>
+                            <li>2019 Chess Olympiad (Teams) - 15th</li>
+                            <li>2020 Online Chess Olympiad (Teams) - 13th</li>
+                        </ul></th>
+                    <th width="20%">Luciv, Artemy</th>
+                    <th width="10%">2330</th>
+                    <th width="20%">Ukraine</th>
                 </tr>
                 <tr>
-                    <th>Name</th>
-                    <th>Rating</th>
-                    <th>Location</th>
+                    <th>Adamson, Mickey</th>
+                    <th>2212</th>
+                    <th>England</th>
                 </tr>
                 <tr>
-                    <th>Name</th>
-                    <th>Rating</th>
-                    <th>Location</th>
+                    <th>León, David</th>
+                    <th>2091</th>
+                    <th>Spain</th>
                 </tr>
                 <tr>
-                    <th>Name</th>
-                    <th>Rating</th>
-                    <th>Location</th>
+                    <th>Panno, Roberto</th>
+                    <th>1999</th>
+                    <th>Brazil</th>
                 </tr>
                 <tr>
-                    <th>Name</th>
-                    <th>Rating</th>
-                    <th>Location</th>
+                    <th>Kampelmann, Martin</th>
+                    <th>1997</th>
+                    <th>Germany</th>
                 </tr>
                 <tr>
-                    <th>Name</th>
-                    <th>Rating</th>
-                    <th>Location</th>
+                    <th>Naumov, Zoran</th>
+                    <th>1988</th>
+                    <th>Serbia</th>
                 </tr>
             </table>
         </section>
