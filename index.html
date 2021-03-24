@@ -11,17 +11,29 @@
     <style>
         h1 {
             font-family: var(--alt-font);
+        }
+
+        .announcement {
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .announcement:last-child {
+            border-bottom: 0;
+        }
+
+        h2 {
+            font-family: var(--alt-font);
             margin-bottom: 7.5px;
         }
 
-        h2.author {
+        h3.author {
             margin-bottom: 0;
             font-family: var(--alt-font);
             font-size: 0.85rem;
             font-weight: bold;
         }
 
-        h3.date {
+        h4.date {
             margin-top: 0;
             margin-bottom: 0;
             font-family: var(--alt-font);
@@ -77,6 +89,10 @@
             text-align: center;
             font-size: 0.75rem;
             font-style: italic;
+        }
+
+        body.dark-mode section {
+            border-bottom: 1px solid var(--dark-border-color);
         }
 
         @media (max-width: 768px) {
@@ -149,16 +165,17 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h1>
+        <h1>Announcements</h1>
+        <section class="announcement">
+            <h2>
                 Mile High Team Qualifiers
-            </h1>
-            <h2 class="author">
-                Joe Miller
             </h2>
-            <h3 class="date">
-                March 20, 2021
+            <h3 class="author">
+                Joe Miller
             </h3>
+            <h4 class="date">
+                March 20, 2021
+            </h4>
             <p>
                 The Mile High Team Qualifiers event is coming the weekend of April 3-4! Make sure to sign up now if you want to participate. The top Mile High teams will be looking for strong talent.
             </p>
@@ -179,16 +196,16 @@
                 </figure>
             </div>
         </section>
-        <section>
-            <h1>
+        <section class="announcement">
+            <h2>
                 30th Annual Mile High Open - Results
-            </h1>
-            <h2 class="author">
-                Ryan Masten
             </h2>
-            <h3 class="date">
-                February 9, 2021
+            <h3 class="author">
+                Ryan Masten
             </h3>
+            <h4 class="date">
+                February 9, 2021
+            </h4>
             <p>
                 The 30th annual Mile High Open took place February 6-7 in Denver, Colorado. We are pleased to report that a total of 83 players participated between three divisions.
             </p>
@@ -209,16 +226,16 @@
                 Thank you to all who participated!
             </p>
         </section>
-        <section>
-            <h1>
+        <section class="announcement">
+            <h2>
                 Kelsch Wins 2020 Pacific City Open
-            </h1>
-            <h2 class="author">
-                Joe Miller
             </h2>
-            <h3 class="date">
-                December 15, 2020
+            <h3 class="author">
+                Joe Miller
             </h3>
+            <h4 class="date">
+                December 15, 2020
+            </h4>
             <p>
                 NM Mark Kelsch won the 2020 Pacific City Open on Sunday. The master from California defeated USCF Expert Paul Wilding in the final round after taking an early lead.
             </p>
