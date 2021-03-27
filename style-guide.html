@@ -9,7 +9,121 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <style>
-        
+    main h1 {
+        margin-bottom: 3rem;
+        font-size: 2.5rem;
+        text-decoration: underline;
+        text-align: center;
+        font-family: var(--alt-font);
+    }
+
+    main h2 {
+        font-size: 1.75rem;
+        font-family: var(--alt-font);
+    }
+
+    main button {
+        font-size: 1.15rem;
+        padding: 0.75rem 1.5rem;
+        color: var(--font-color);
+        border: 1px solid var(--font-color);
+        background-color: var(--alt-background-color);
+        cursor: pointer;
+    }
+
+    main button:hover {
+        background-color: var(--background-color);
+    }
+
+    main > div {
+        text-align: left;
+        font-size: 1.15rem;
+        margin: 1rem auto;
+        max-width: 750px;
+        border-top: 1px solid var(--alt-background-color);
+    }
+
+    main > div:first-of-type {
+        border-top: 0px transparent;
+    }
+
+    main div .color-wrapper .color {
+        width: 100%;
+        height: 150px;
+        margin: 0.75rem 0;
+        border: 1px solid var(--font-color);
+    }
+
+    main > div:nth-of-type(1), main > div:nth-of-type(2) {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 15px;
+    }
+
+    main > div:nth-of-type(1) h2, main > div:nth-of-type(2) h2 {
+        grid-row: 1;
+        grid-column: 1/5;
+    }
+
+    main > div:nth-of-type(1) .color-wrapper:nth-of-type(1) .color {
+        background-color: var(--background-color);
+    }
+
+    main > div:nth-of-type(1) .color-wrapper:nth-of-type(2) .color {
+        background-color: var(--alt-background-color);
+    }
+
+    main > div:nth-of-type(1) .color-wrapper:nth-of-type(3) .color {
+        background-color: var(--font-color);
+    }
+
+    main > div:nth-of-type(1) .color-wrapper:nth-of-type(4) .color {
+        background-color: var(--alt-font-color);
+    }
+
+    main > div:nth-of-type(2) .color-wrapper:nth-of-type(1) .color {
+        background-color: var(--dark-background-color);
+    }
+
+    main > div:nth-of-type(2) .color-wrapper:nth-of-type(2) .color {
+        background-color: var(--dark-alt-background-color);
+    }
+
+    main > div:nth-of-type(2) .color-wrapper:nth-of-type(3) .color {
+        background-color: var(--dark-font-color);
+    }
+
+    main > div:nth-of-type(2) .color-wrapper:nth-of-type(4) .color {
+        background-color: var(--dark-alt-font-color);
+    }
+
+    main.dark-mode {
+        background-color: var(--dark-background-color);
+        color: var(--dark-font-color);
+    }
+
+    main.dark-mode button {
+        color: var(--dark-font-color);
+        border: 1px solid var(--dark-font-color);
+        background-color: var(--dark-alt-background-color);
+    }
+
+    main.dark-mode button:hover {
+        background-color: var(--dark-background-color);
+    }
+
+    main.dark-mode > div {
+        border-top: 1px solid var(--dark-alt-background-color);
+    }
+
+    main.dark-mode > div:first-of-type {
+        border-top: 0px transparent;
+    }
+
+    main.dark-mode div .color-wrapper .color {
+        border: 1px solid var(--dark-font-color);
+    }
     </style>
     <script src="js/dark-mode.js"></script>
 </head>
@@ -49,7 +163,151 @@
         </nav>
     </header>
     <main>
-        Insert text here.
+        <h1>Style Guide</h1>
+        <button>Toggle Dark Mode</button>
+        <div>
+            <h2>Normal Colors</h2>
+            <div class="color-wrapper">
+                <div class="title">
+                    Background
+                </div>
+                <div class="color"></div>
+                <div>
+                    #FCFFFB
+                </div>
+            </div>
+            <div class="color-wrapper">
+                <div class="title">
+                    Alt Background
+                </div>
+                <div class="color"></div>
+                <div>
+                    #034A83
+                </div>
+            </div>
+            <div class="color-wrapper">
+                <div class="title">
+                    Primary
+                </div>
+                <div class="color"></div>
+                <div>
+                    #011627
+                </div>
+            </div>
+            <div class="color-wrapper">
+                <div class="title">
+                    Alt Primary
+                </div>
+                <div class="color"></div>
+                <div>
+                    #E5F3FE
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2>Dark Mode Colors</h2>
+            <div class="color-wrapper">
+                <div class="title">
+                    Background
+                </div>
+                <div class="color"></div>
+                <div>
+                    #011A2E
+                </div>
+            </div>
+            <div class="color-wrapper">
+                <div class="title">
+                    Alt Background
+                </div>
+                <div class="color"></div>
+                <div>
+                    #023966
+                </div>
+            </div>
+            <div class="color-wrapper">
+                <div class="title">
+                    Primary
+                </div>
+                <div class="color"></div>
+                <div>
+                    #E5F3FE
+                </div>
+            </div>
+            <div class="color-wrapper">
+                <div class="title">
+                    Alt Primary
+                </div>
+                <div class="color"></div>
+                <div>
+                    #FCFFFB
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2>Fonts</h2>
+            <p>
+                I have chosen to use the following fonts for my site:
+            </p>
+            <ul>
+                <li>
+                    Montserrat: Used for headlines.
+                </li>
+                <li>
+                    Lato: Used for the primary font.
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2>Elevator Pitch</h2>
+            <p>
+                Here’s my idea. I want to make a website promoting a fictitious chess club/team. The site would have a few articles, a record (results and pictures) of the players’ games, a page for how to join the team, and maybe a page for coaching. This fictitious chess club/team is highly competitive and goes to national, and even some international, tournaments, so the “selling point” is that if you live nearby you can join/get coaching/learn tips from some of the top players in the nation. But it would not really be for profit, just a platform for the chess club/team.
+            </p>
+        </div>
+        <div>
+            <h2>Purpose Statement</h2>
+            <p>
+                We would like to create an online presence for our chess team in the form of a website. The purpose of the site would be to indirectly build revenue for the team, provide information about our chess team, and share a love for the game of chess with people across the world. The site would build revenue by raising awareness for chess tournaments and offering coaching to customers. We would also share information about our team and offer tips and advice to chess enthusiasts. It would be a hub for chess masters to share advice and chess players to find information about chess.
+            </p>
+        </div>
+        <div>
+            <h2>Audience Statement</h2>
+            <p>
+                The target customers are people interested in chess, and even people who do not yet know anything about the game. Their lives and situations would be varied, but prospective chess team members would have to live in the same geographical area. The customers will want to join the team, or they might want to get a chess coach, or to find nearby tournaments. Their needs are not being adequately met right now because there is no chess club in their area, or they do not have a coach, or there are no tournaments nearby. The audience will access the website via their desktop or laptop computer.
+            </p>
+        </div>
+        <div>
+            <h2>Mission Statement</h2>
+            <p>
+                Our mission is to share a love for the game of chess; to help chess enthusiasts learn to be better players; to provide players with coaching; and to host tournaments for players in our geographical area. We operate in the western United States (haven’t decided exactly where yet), but we have teams all over the world. We value teamwork, strategy, and integrity, and we believe that the best way to compete is as a team. We envision a world where everyone plays chess, whether competitively or for fun, and we hope to be a part of that future world—sharing in games of chess and teaching others what makes the game so fun!
+            </p>
+        </div>
+        <div>
+            <h2>Persona and Scenario Ideas</h2>
+            <p>
+                "Chess Enthusiast and Improver"<br>
+                Name: Jonathan<br>
+                Age: 23<br>
+                Motivations: Develop chess skills and stay informed<br>
+                Goals: Find local tournaments and improve at chess<br>
+                Technical ability: Basic proficiency with IT
+            </p>
+        </div>
+        <script>
+            /**
+             * This script adds a listener to the dark mode toggle button.
+             * When it is clicked the class .dark-mode is added or removed
+             * from the body. In our CSS file we added specific rules to
+             * the page when the .dark-mode class is present.
+             */
+            var toggle = document.querySelector('button');
+            if ( toggle ) {
+                toggle.addEventListener( 'click', toggleDarkMode );
+            }
+
+            function toggleDarkMode() {
+                document.body.classList.toggle('dark-mode');
+            }
+        </script>
     </main>
     <footer>
         <div id="legal">
