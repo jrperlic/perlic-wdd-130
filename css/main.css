@@ -3,17 +3,17 @@
     --spacing: 15px;
     --font-size: 1.15rem;
     /* Normal Colors */
-    --background-color: #FCFFFB;
+    --background-color: #FFFFFF;
     --alt-background-color: #034A83;
-    --font-color: #011627;
-    --alt-font-color: #E5F3FE;
-    --border-color: #024379;
+    --font-color: #022542;
+    --alt-font-color: #E6EDF3;
+    --border-color: #CDDBE6;
     /* Dark Mode Colors */
-    --dark-background-color: #011A2E;
-    --dark-alt-background-color: #023966;
-    --dark-font-color: #E5F3FE;
-    --dark-alt-font-color: #FCFFFB;
-    --dark-border-color: #CAE7FE;
+    --dark-background-color: #022542;
+    --dark-alt-background-color: #011627;
+    --dark-font-color: #E6EDF3;
+    --dark-alt-font-color: #FFFFFF;
+    --dark-border-color: #011E34;
     /* Fonts */
     --main-font: 'Lato', sans-serif;
     --alt-font: 'Montserrat', sans-serif;
