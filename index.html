@@ -11,125 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <style>
-        h1 {
-            font-family: var(--alt-font);
-        }
-
-        .announcement {
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .announcement:last-child {
-            border-bottom: 0;
-        }
-
-        h2 {
-            font-family: var(--alt-font);
-            margin-bottom: 7.5px;
-        }
-
-        h3.author {
-            margin-bottom: 0;
-            font-family: var(--alt-font);
-            font-size: 0.85rem;
-            font-weight: bold;
-        }
-
-        h4.date {
-            margin-top: 0;
-            margin-bottom: 0;
-            font-family: var(--alt-font);
-            font-size: 0.85rem;
-            font-style: italic;
-        }
-
-        .image-grid {
-            grid-template-columns: auto auto;
-            grid-template-rows: auto;
-            text-align: center;
-        }
-
-        figcaption {
-            font-size: 0.75rem;
-            text-align: center;
-            vertical-align: middle;
-        }
-
-        #figure1 {
-            grid-row: 1;
-            grid-column: 1;
-        }
-
-        #figure2 {
-            grid-row: 1;
-            grid-column: 2;
-        }
-
-        #tournament1 {
-            margin: 7.5px;
-            width: 400px;
-            height: 280px;
-            justify-items: center;
-        }
-
-        #tournament2 {
-            margin: 7.5px;
-            width: 400px;
-            height: 280px;
-            justify-items: center;
-        }
-
-        .board {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            max-width: 400px;
-            max-height: auto;
-        }
-
-        .analysis {
-            text-align: center;
-            font-size: 0.75rem;
-            font-style: italic;
-        }
-
-        body.dark-mode section {
-            border-bottom: 1px solid var(--dark-border-color);
-        }
-
-        @media (max-width: 768px) {
-            .image-grid {
-                grid-template-columns: auto;
-                grid-template-rows: auto auto;
-            }
-
-            #figure1 {
-                grid-row: 1;
-                grid-column: 1;
-            }
-
-            #figure2 {
-                grid-row: 2;
-                grid-column: 1;
-            }
-
-            #tournament1 {
-                width: 200px;
-                height: 140px;
-            }
-
-            #tournament2 {
-                width: 200px;
-                height: 140px;
-            }
-
-            .board {
-                max-width: 300px;
-                max-height: 300px;
-            }
-        }
-    </style>
     <script src="js/dark-mode.js"></script>
 </head>
 <body>
@@ -168,7 +49,7 @@
         </nav>
     </header>
     <main>
-        <h1>Announcements</h1>
+        <h1 class="bordered">Announcements</h1>
         <section class="announcement">
             <h2>
                 Mile High Team Qualifiers
@@ -176,9 +57,9 @@
             <h3 class="author">
                 Joe Miller
             </h3>
-            <h4 class="date">
+            <h3 class="date">
                 March 20, 2021
-            </h4>
+            </h3>
             <p>
                 The Mile High Team Qualifiers event is coming the weekend of April 3-4! Make sure to sign up now if you want to participate. The top Mile High teams will be looking for strong talent.
             </p>
@@ -206,9 +87,9 @@
             <h3 class="author">
                 Ryan Masten
             </h3>
-            <h4 class="date">
+            <h3 class="date">
                 February 9, 2021
-            </h4>
+            </h3>
             <p>
                 The 30th annual Mile High Open took place February 6-7 in Denver, Colorado. We are pleased to report that a total of 83 players participated between three divisions.
             </p>
@@ -236,9 +117,9 @@
             <h3 class="author">
                 Joe Miller
             </h3>
-            <h4 class="date">
+            <h3 class="date">
                 December 15, 2020
-            </h4>
+            </h3>
             <p>
                 NM Mark Kelsch won the 2020 Pacific City Open on Sunday. The master from California defeated USCF Expert Paul Wilding in the final round after taking an early lead.
             </p>

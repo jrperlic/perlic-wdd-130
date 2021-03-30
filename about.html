@@ -11,84 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <style>
-        h1 {
-            font-family: var(--alt-font);
-        }
-
-        section {
-            display: grid;
-            grid-template-rows: auto;
-            grid-template-columns: auto auto;
-            padding-left: 200px;
-            padding-right: 200px;
-            padding-bottom: 50px;
-        }
-
-        .card {
-            max-width: 250px;
-            padding: 7.5px;
-            grid-row: 1;
-            grid-column: 1;
-            border: 1px solid var(--border-color);
-            background-color: var(--alt-background-color);
-            text-align: center;
-        }
-
-        .card img {
-            margin-bottom: -15px;
-        }
-
-        .container {
-            margin: 7.5px 7.5px -15px 7.5px;
-            vertical-align: middle;
-        }
-
-        .alt-card {
-            max-width: 250px;
-            padding: 7.5px;
-            grid-row: 1;
-            grid-column: 2;
-            border: 1px solid var(--border-color);
-            background-color: var(--alt-background-color);
-            text-align: center;
-        }
-
-        .alt-card img {
-            margin-bottom: -15px;
-        }
-
-        body.dark-mode .card {
-            border: 1px solid var(--dark-border-color);
-            background-color: var(--dark-alt-background-color);
-        }
-
-        body.dark-mode .alt-card {
-            border: 1px solid var(--dark-border-color);
-            background-color: var(--dark-alt-background-color);
-        }
-
-        .description {
-            grid-row: 1;
-            grid-column: 2;
-            margin: 7.5px;
-            padding-left: 15px;
-        }
-
-        .alt-description {
-            grid-row: 1;
-            grid-column: 1;
-            margin: 7.5px;
-            padding-right: 15px;
-        }
-
-        @media (max-width: 768px) {
-            section {
-                padding-left: 0px;
-                padding-right: 0px;
-            }
-        }
-    </style>
     <script src="js/dark-mode.js"></script>
     <script src="js/fake-send.js"></script>
 </head>
@@ -128,7 +50,7 @@
         </nav>
     </header>
     <main>
-        <h1>About Us</h1>
+        <h1 class="bordered">About Us</h1>
         <p>
             Mile High Mates began as a chess team in 1991. Formed by chess enthusiasts Bruce Hayes, Michael Hennigar, and Brad Doherty, the team met in a garage for the first three years of its existence. Often, there were not enough players to fill all the boards and team members played on two boards at once. In 1999, MHM expanded into two teams. By 2016, MHM had five teams.
         </p>
@@ -136,8 +58,8 @@
         <p>
             The Mile High Mates chess team promotes the study and knowledge of the game of chess, for its own sake as an art, a science, and a source of self improvement, as well as a means for the improvement of society. Chess informs, educates, and fosters the development of players, both professional and amateur, youth and adult. It encourages the development of upstanding personal character, mental and emotional stability, increased personal self-esteem and self-confidence, and mutual respect. The play of chess serves as a means for people to come together in a democratic spirit from diverse social backgrounds. In this role as part of the social fabric of the Rocky Mountain region, MHM unites people of different ages, different ethnicities, opposite genders, different economic and cultural associations, and it promotes chess in American schools.
         </p>
-        <h1>Management</h1>
-        <section>
+        <h2 id="adjust">Management</h2>
+        <section class="about">
             <div class="card">
                 <img src="assets/about/doherty.jpg" alt="Brad Doherty">
                 <div class="container">
@@ -150,7 +72,7 @@
                 <p>Email: bdoherty@chess.mhm.com</p>
             </div>
         </section>
-        <section>
+        <section class="about">
             <div class="alt-description">
                 <p>Bruce Hayes did not start playing chess until the age of 11. He quickly became obsessed with chess and learned as many openings as he could. At age 13, only two years after learning how to play, he won his middle school's chess tournament. Since then, Bruce has enthusiastically continued to play the game. He became the Secretary of MHM in 1993.</p>
                 <p>Email: bhayes@chess.mhm.com</p>
@@ -163,7 +85,7 @@
                 </div>
               </div>
         </section>
-        <section>
+        <section class="about">
             <div class="card">
                 <img src="assets/about/radic.jpg" alt="Anthony Radic">
                 <div class="container">

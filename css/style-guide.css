@@ -1,0 +1,92 @@
+main h1 {
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    text-decoration: underline;
+    text-align: center;
+    font-family: var(--alt-font);
+}
+
+main h2 {
+    font-size: 1.75rem;
+    font-family: var(--alt-font);
+}
+
+main > div {
+    text-align: left;
+    font-size: 1.15rem;
+    margin: 1rem auto;
+    max-width: 750px;
+    border-top: 1px solid var(--border-color);
+}
+
+main > div:first-of-type {
+    border-top: 0px transparent;
+}
+
+main div .color-wrapper .color {
+    width: 100%;
+    height: 150px;
+    margin: 0.75rem 0;
+    border: 1px solid var(--border-color);
+}
+
+main > div:nth-of-type(1), main > div:nth-of-type(2) {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+}
+
+main > div:nth-of-type(1) h2, main > div:nth-of-type(2) h2 {
+    grid-row: 1;
+    grid-column: 1/5;
+}
+
+main > div:nth-of-type(1) .color-wrapper:nth-of-type(1) .color {
+    background-color: var(--background-color);
+}
+
+main > div:nth-of-type(1) .color-wrapper:nth-of-type(2) .color {
+    background-color: var(--alt-background-color);
+}
+
+main > div:nth-of-type(1) .color-wrapper:nth-of-type(3) .color {
+    background-color: var(--font-color);
+}
+
+main > div:nth-of-type(1) .color-wrapper:nth-of-type(4) .color {
+    background-color: var(--alt-font-color);
+}
+
+main > div:nth-of-type(2) .color-wrapper:nth-of-type(1) .color {
+    background-color: var(--dark-background-color);
+}
+
+main > div:nth-of-type(2) .color-wrapper:nth-of-type(2) .color {
+    background-color: var(--dark-alt-background-color);
+}
+
+main > div:nth-of-type(2) .color-wrapper:nth-of-type(3) .color {
+    background-color: var(--dark-font-color);
+}
+
+main > div:nth-of-type(2) .color-wrapper:nth-of-type(4) .color {
+    background-color: var(--dark-alt-font-color);
+}
+
+main.dark-mode {
+    background-color: var(--dark-background-color);
+    color: var(--dark-font-color);
+}
+
+main.dark-mode > div {
+    border-top: 1px solid var(--dark-border-color);
+}
+
+main.dark-mode > div:first-of-type {
+    border-top: 0px transparent;
+}
+
+main.dark-mode div .color-wrapper .color {
+    border: 1px solid var(--dark-border-color);
+}
