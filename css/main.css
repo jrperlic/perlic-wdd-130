@@ -105,7 +105,7 @@ main {
     background-color: var(--background-color);
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: var(--alt-font);
 }
 
@@ -266,6 +266,112 @@ figcaption {
 
 .description {
     margin: 5px;
+}
+
+form {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    background-color: var(--alt-background-color);
+    font-family: var(--alt-font);
+}
+
+input {
+    width: 100%;
+    margin-top: 2.5px;
+}
+
+#name {
+    grid-row: 1;
+    grid-column: 1;
+    padding-bottom: 7.5px;
+}
+
+#subject {
+    grid-row: 2;
+    grid-column: 1;
+    padding-bottom: 7.5px;
+}
+
+#message {
+    grid-row: 3;
+    grid-column: 1;
+    padding-bottom: 7.5px;
+}
+
+#contact-form-submit {
+    grid-row: 4;
+    grid-column: 1;
+    justify-self: right;
+    width: 200px;
+}
+
+form textarea {
+    resize: none;
+    width: 100%;
+    margin-top: 2.5px;
+}
+
+#div-text {
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 45px;
+}
+
+#spacing {
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    line-height: 50px;
+    font-size: 1rem;
+    background-color: var(--alt-background-color);
+}
+
+table, th, td {
+    border: 1px solid var(--border-color);
+}
+
+th[rowspan] {
+    vertical-align: top;
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.wf {
+    border: 1px solid var(--border-color);
+    margin-bottom: 15px;
+    background-color: var(--alt-background-color);
+}
+
+.wf-name {
+    margin: 7.5px;
+    text-align: center;
+}
+
+.wf img {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 601px;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--border-color);
+}
+
+.wf p {
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
 }
 
 footer {
@@ -470,6 +576,31 @@ body.dark-mode .alt-card {
 body.dark-mode .coach {
     border: 1px solid var(--dark-border-color);
     background-color: var(--dark-alt-background-color);
+}
+
+body.dark-mode form {
+    border: 1px solid var(--dark-border-color);
+    background-color: var(--dark-alt-background-color);
+}
+
+body.dark-mode #div-text {
+    border-bottom: 1px solid var(--dark-border-color);
+}
+
+body.dark-mode table {
+    background-color: var(--dark-alt-background-color);
+}
+
+body.dark-mode table, body.dark-mode th, body.darkmode td {
+    border: 1px solid var(--dark-border-color);
+}
+
+body.dark-mode .wf {
+    background-color: var(--dark-alt-background-color);
+}
+
+body.dark-mode .wf, body.dark-mode .wf img {
+    border: 1px solid var(--dark-border-color);
 }
 
 /*=====================*\
