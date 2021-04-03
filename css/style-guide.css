@@ -74,19 +74,19 @@ main > div:nth-of-type(2) .color-wrapper:nth-of-type(4) .color {
     background-color: var(--dark-alt-font-color);
 }
 
-main.dark-mode {
+body.dark-mode {
     background-color: var(--dark-background-color);
     color: var(--dark-font-color);
 }
 
-main.dark-mode > div {
+body.dark-mode > main > div {
     border-top: 1px solid var(--dark-border-color);
 }
 
-main.dark-mode > div:first-of-type {
+body.dark-mode > div:first-of-type {
     border-top: 0px transparent;
 }
 
-main.dark-mode div .color-wrapper .color {
+body.dark-mode div .color-wrapper .color {
     border: 1px solid var(--dark-border-color);
 }
